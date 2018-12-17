@@ -47,7 +47,7 @@
           * things that are to be drawn.
           */
          function draw() {
-          var context = bouncecanvas.getContext('2d);
+          var context = bouncecanvas.getContext('2d');
           context.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
           drawbvall(context);
          {
@@ -61,6 +61,24 @@
           border-bottom-width: 2px;
           border-right-width: 2px;
           border-top-width: 2px;
+          border-left-width: 2px;
+          border-bottom-width: 2px;
+          border-right-width: 2px;
+          border-top-width: 2px;
+          border-left-width: 2px;
+          border-bottom-width: 2px;
+          border-right-width: 2px;
+         };
+        </style>
+       </head>
+       <body>
+          <h1>Bouncy Ball</h1>
+          <canvas id="bounceCanvas" width="500" height="300"></canvas>
+         </body>
+        </html>
+          
+          
+          
           
           
           
