@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Canvas</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="400" height="400"></canvas>
+    
+    <script>
+      var canvas = document.getElementById("canvas"); // look for canvas
+      var ctx = canvas.getContext("2d"); // tells javascript that the drawing will be 2 dimensional
+      
+      ctx.fillStyle="purple";
+      ctx.fillRect(0, 0, 133, 400); // first rectangle
+      
+      ctx.fillStyle="pink";
+      ctx.fillRect(133, 0, 133, 400); // second rectangle
+      
+      ctx.fillStyle="blue";
+      ctx.fillRect(266, 0, 134, 400); // third rectangle
+      
+  ctx.strokeStyle="grey"
+   ctx.lineWidth="2"
+      
+   var head = function(){
+     ctx.strokeRect(65 , 55, 40, 40);// head
+   }
+      
+   var body = function(){
+    ctx.beginPath();
+      ctx.moveTo(85,95);
+      ctx.lineTo( 85, 181);
+    ctx.stroke();
+   }
+   var leftArm = function(){
+     ctx.beginPath();
+      ctx.moveTo( 85, 131);// left arm
+      ctx.lineTo( 53, 35);
+     ctx.stroke();
+   }
+      var rightArm = function(){
+        ctx.beginPath();
+        ctx.moveTo( 85, 131);// right arm
+      ctx.lineTo( 73, 35);
+        ctx.stroke();
+      }
+      var rightLeg = function(){
+        ctx.beginPath();
+        ctx.moveTo( 85, 181);// right leg
+      ctx.lineTo( 55, 206);
+        ctx.stroke
+      }
+      var leftLeg = function(){
+        ctx.beginPath();
+        ctx.moveTo( 85, 181);// left arm
+      ctx.lineTo( 115, 206);
+       ctx.stroke();
+      }
+      
+      ctx.beginPath();//to the gallows
+      ctx.moveTo(10, 200);
+      ctx.lineTo(10, 40);
+      ctx.moveTo(10, 40);
+      ctx.lineTo(85, 40);
+      ctx.moveTo(85, 40);
+      ctx.lineTo(85, 55);
+      ctx.stroke();
+    </script>
+  </body>
+</html>
